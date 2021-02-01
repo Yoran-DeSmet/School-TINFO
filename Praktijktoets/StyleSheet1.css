@@ -1,0 +1,20 @@
+﻿body {
+    background-image: url('achtergrond.jpg');
+}
+p {
+    margin-left: 3px;
+    font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, Sans-Serif;
+}
+p3 {
+
+}
+h1 {
+    text-align: center;
+    color: indianred;
+    text-shadow: 2px;
+    font-size: 50px;
+
+}
+ul {
+    list-style-image: url('logo.png')
+}
