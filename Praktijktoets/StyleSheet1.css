@@ -1,5 +1,11 @@
 ﻿body {
-    background-image: url('achtergrond.jpg');
+    background-image: url("afbeeldingenpraktijktoets/img_tree.png");
+    width: 30%;
+    background-position: right;
+    bottom: 10px;
+    right: 0;
+}
+    
 }
 p {
     margin-left: 3px;
@@ -15,6 +21,18 @@ h1 {
     font-size: 50px;
 
 }
+p3 {
+    width: 500px;
+    margin: 3%;
+    border-style: dashed dotted double solid;
+    border-color: aquamarine blueviolet yellowgreen coral;
+    background-image: url("achtergrond.jpg");
+    padding: 20px 5px;
+    
+}
 ul {
-    list-style-image: url('logo.png')
+    list-style-image: url("afbeeldingenpaktijktoets/logo.png");
+    background: #ff9999;
+    max-width: 500px;
+    margin: auto;
 }
