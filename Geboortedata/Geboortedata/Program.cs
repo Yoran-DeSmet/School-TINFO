@@ -26,23 +26,14 @@ namespace Geboortedata
             DateTime[] geboortedata = new DateTime[5];
             const byte maxAantalGeboortedata = 5;
             //INPUT
-            for (int i = 0; i < maxAantalGeboortedata; i++)
-            {
-                Console.WriteLine($"Geef geboortedatum {i + 1}");
-                geboortedatum = DateTime.Parse(Console.ReadLine());
-
-                geboortedata[i] = geboortedatum;
-
-                leeftijd = (byte)(vandaag.Year - geboortedatum.Year);
-
-
-            }
-
+            Console.WriteLine($"Geef geboortedatum ");
+            geboortedatum = DateTime.Parse(Console.ReadLine());
             Console.ReadLine();
+
 
             //p
             Console.Write("De ouste leeftijd is: ");
-
+            
         }
     }
 }
