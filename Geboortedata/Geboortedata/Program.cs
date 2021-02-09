@@ -37,6 +37,12 @@ namespace Geboortedata
 
 
             }
+
+            Console.ReadLine();
+
+            //p
+            Console.Write("De ouste leeftijd is: ");
+
         }
     }
 }
