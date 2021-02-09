@@ -20,19 +20,39 @@ namespace Geboortedata
         static void Main(string[] args)
         {
             //DECLARATIONS
-            byte leeftijd;
-            DateTime geboortedatum;
-            DateTime vandaag = DateTime.Today;
-            DateTime[] geboortedata = new DateTime[5];
-            const byte maxAantalGeboortedata = 5;
-            //INPUT
-            Console.WriteLine($"Geef geboortedatum ");
-            geboortedatum = DateTime.Parse(Console.ReadLine());
+            DateTime[] geboortedatum = new DateTime[5];
+            int[] leeftijd = new int[5];
+            int oudste;
+
+            //INPUNT
+            //VRAAG: geboortedatums
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Geef de geboortedatum in DD/MM/YY: ");
+                geboortedatum[i] = DateTime.Parse(Console.ReadLine());
+            }
+
+            //P
+            //BEREKEN:  leeftijden
+            for (int i = 0; i < 5; i++)
+            {
+                leeftijd[i] = CalculateLeeftijd(geboortedatum[i]);
+            }
+            //BEREKEN:  oudste
+            oudste = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                if (leeftijd[i] >= oudste)
+                    oudste = leeftijd[i];
+            }
+
+            //output
+            //TOON:     oudste
+            Console.WriteLine($"de oudste persoon uit de reeks geboortedata is: ");
+
+            Console.WriteLine();
+            Console.WriteLine("druk op enter om af te sluiten...");
             Console.ReadLine();
-
-
-            //p
-            Console.Write("De ouste leeftijd is: ");
             
         }
     }
