@@ -53,7 +53,33 @@ namespace Geboortedata
             Console.WriteLine();
             Console.WriteLine("druk op enter om af te sluiten...");
             Console.ReadLine();
-            
+
+
+
+
+            private static int CalculateLeeftijd(DateTime geboortedatum)
+            {
+                int leeftijd;
+                //bereken leeftijd
+                if (geboortedatum.Month > DateTime.Now.Month)
+                {
+                    leeftijd = (DateTime.Now.Year - geboortedatum.Year) - 1;
+                }
+                else if (geboortedatum.Month == DateTime.Now.Month)
+                {
+                    if (geboortedatum.Day >= DateTime.Now.Day)
+                        leeftijd = (DateTime.Now.Year - geboortedatum.Year) - 1;
+                    else
+                        leeftijd = (DateTime.Now.Year - geboortedatum.Year);
+                }
+                else
+                {
+                    leeftijd = (DateTime.Now.Year - geboortedatum.Year);
+                }
+                return leeftijd;
+            }
         }
+
+    }
     }
 }
