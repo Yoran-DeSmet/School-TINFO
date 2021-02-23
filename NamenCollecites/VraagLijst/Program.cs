@@ -11,14 +11,14 @@ namespace VraagLijst
         static void Main(string[] args)
         {
             versie1();
+            byte AantalElementen;
 
-            
+
             //Wachten...
             Console.WriteLine();
             Console.WriteLine("Druk een knop om te stoppen...");
             Console.ReadLine();
 
-            byte AantalElementen;
             //DECLARATIONS
             byte lenght;
             List<string> namen = new List<string>();
