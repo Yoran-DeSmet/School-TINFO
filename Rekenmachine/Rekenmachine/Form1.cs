@@ -19,7 +19,7 @@ namespace Rekenmachine
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ($" {getal1} ++ {getal2})
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -29,7 +29,12 @@ namespace Rekenmachine
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            byte getal1;
+        }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            byte getal2;
         }
     }
 }
