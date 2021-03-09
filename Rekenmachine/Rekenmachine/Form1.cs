@@ -17,6 +17,11 @@ namespace Rekenmachine
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Controls instellen.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             ($" {getal1} ++ {getal2})
@@ -36,5 +41,15 @@ namespace Rekenmachine
         {
             byte getal2;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VraagVerschil_Click(object sender, EventArgs e)
+        {
+
+        }"
     }
 }
