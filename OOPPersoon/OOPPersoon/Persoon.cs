@@ -9,8 +9,13 @@ namespace OOPPersoon
     class Persoon
     {
         public string Voornaam { get; set; }
-        public string Familienaam { get; set; }
-        public short Geboortedatum { get; set; }
-        public short Geboortejaar { get; set; }
+        public string Achternaam { get; set; }
+        public DateTime Geboortedatum { get; set; }
+        public int Geboortjaar { get { return Geboortedatum.Year; } }
+        public override string ToString()
+        {
+            return $("")
+
+        }
     }
 }
