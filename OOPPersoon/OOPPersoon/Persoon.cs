@@ -14,7 +14,7 @@ namespace OOPPersoon
         public int Geboortjaar { get { return Geboortedatum.Year; } }
         public override string ToString()
         {
-            return $("")
+            return $()
 
         }
     }
