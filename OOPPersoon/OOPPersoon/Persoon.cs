@@ -14,7 +14,7 @@ namespace OOPPersoon
         public int Geboortejaar { get { return Geboortedatum.Year; } }
         public override string ToString()
         {
-            return $"{Voornaam} {Achternaam} {Leeftijd()}";
+            return $"{Voornaam} {Achternaam.ToUpper()} {Leeftijd()}";
 
         }
         private byte Leeftijd()
