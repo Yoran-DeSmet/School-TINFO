@@ -11,11 +11,17 @@ namespace OOPPersoon
         public string Voornaam { get; set; }
         public string Achternaam { get; set; }
         public DateTime Geboortedatum { get; set; }
-        public int Geboortjaar { get { return Geboortedatum.Year; } }
+        public int Geboortejaar { get { return Geboortedatum.Year; } }
         public override string ToString()
         {
-            return $()
+            return $"{Voornaam} {Achternaam} {Leeftijd()}";
 
+        }
+        private byte Leeftijd()
+        {
+            byte leeftijd;
+            leeftijd = (byte)(DateTime.Today.Year - Geboortejaar);
+            return leeftijd;
         }
     }
 }
